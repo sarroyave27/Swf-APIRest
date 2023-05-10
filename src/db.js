@@ -4,5 +4,7 @@ import { createPool } from "mysql2/promise";
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'streetwise' 
+    port: 3306,
+    database: 'streetwisefitness' 
 })
+//Poner el puerto no es tan necesario

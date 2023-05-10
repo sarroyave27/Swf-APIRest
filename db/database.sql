@@ -1,13 +1,17 @@
-CREATE DATABASE streetwise COLLATE utf8_general_ci;
+CREATE DATABASE streetwisefitness COLLATE utf8_general_ci;
 
-USE steetwise; 
+USE streetwisefitness; 
 
 CREATE TABLE usuario (
-    COD_USUARIO INT (12) AUTO_INCREMENT PRIMARY KEY,
+    COD_USUARIO INT (10) AUTO_INCREMENT PRIMARY KEY,
     NOMBRES VARCHAR(50),
     APELLIDOS VARCHAR(50),
     CORREO VARCHAR(50),
-    CELULAR INT(12),
+    CELULAR INT(10),
     FECHA_NACIMIENTO DATE,
     CONTRASEÑA LONGTEXT NOT NULL
 )
+
+INSERT INTO usuario VALUES
+(5, 'Jorel', 'Varrero')
+(6, 'Jonatan', 'Barco')
